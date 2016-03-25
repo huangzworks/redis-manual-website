@@ -354,7 +354,7 @@ div.header ul li {
 }
 
 div.banner {
-    height: 630px;
+    height: 605px;
     padding: 30px 0 30px 0;
     background-color: #eee;
     background-color: #EDEDE5;
