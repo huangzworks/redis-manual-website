@@ -378,6 +378,7 @@ div.intro_text {
 div.intro_text h2 {
     padding-left: 20px;
     color: #D82A20;
+    text-align: center;
 }
 
 div.intro_text li {
