@@ -345,6 +345,10 @@ div.header h1 a {
     font-weight: bold;
 }
 
+div.header h1 a:hover {
+    color: #D82A20;
+}
+
 div.header ul {
     float:left;
 }
