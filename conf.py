@@ -47,9 +47,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Redis使用教程'
-copyright = '2016, 黄健宏'
-author = '黄健宏'
+project = u'Redis使用教程'
+copyright = u'2018, 黄健宏'
+author = u'黄健宏'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -223,8 +223,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Redis.tex', 'Redis使用教程 Documentation',
-   '黄健宏', 'manual'),
+  (master_doc, 'Redis.tex', u'Redis使用教程 Documentation',
+   u'黄健宏', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -253,7 +253,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'redis', 'Redis使用教程 Documentation',
+    (master_doc, 'redis', u'Redis使用教程 Documentation',
      [author], 1)
 ]
 
@@ -267,7 +267,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Redis', 'Redis使用教程 Documentation',
+  (master_doc, u'Redis', u'Redis使用教程 Documentation',
    author, 'Redis', 'One line description of project.',
    'Miscellaneous'),
 ]
