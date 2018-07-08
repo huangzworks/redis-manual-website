@@ -388,3 +388,7 @@ div.intro_text h2 {
 div.intro_text li {
     padding-bottom: 15px;
 }
+
+ul li strong {
+    color: #D82A20;
+}
