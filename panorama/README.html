@@ -23,6 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -98,29 +99,29 @@
             
   <div class="section" id="der">
 <h1>DER<a class="headerlink" href="#der" title="永久链接至标题">¶</a></h1>
-<p><code class="docutils literal"><span class="pre">DER</span> <span class="pre">==</span> <span class="pre">reverse(&quot;RED&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">DER</span> <span class="pre">==</span> <span class="pre">reverse(&quot;RED&quot;)</span></code></p>
 <p>本项目是 <a class="reference external" href="http://www.redisbook.com">《Redis 设计与实现》</a> 所使用的 Sphinx 样式。</p>
 <p>样式特点：</p>
 <ul class="simple">
 <li>单色调简单风格（默认为红色，但很容易就可以修改成其他颜色）</li>
-<li>醒目的 <code class="docutils literal"><span class="pre">h1</span></code> 标题</li>
-<li>清晰的、可以高效地对文本进行视线分割的 <code class="docutils literal"><span class="pre">h2</span></code> 标题</li>
+<li>醒目的 <code class="docutils literal notranslate"><span class="pre">h1</span></code> 标题</li>
+<li>清晰的、可以高效地对文本进行视线分割的 <code class="docutils literal notranslate"><span class="pre">h2</span></code> 标题</li>
 <li>固定大小、居中显示、百分比字体大小，布局健壮，适用于多种不同的屏幕环境</li>
 </ul>
 <div class="section" id="id1">
 <h2>使用方法<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
 <li>克隆本项目。</li>
-<li>修改 sphinx 项目 <code class="docutils literal"><span class="pre">conf.py</span></code> 文件中的 <code class="docutils literal"><span class="pre">html_theme_path</span></code> 变量，让它指向 <code class="docutils literal"><span class="pre">der</span></code> 文件夹所在的位置。</li>
-<li>修改 sphinx 项目 <code class="docutils literal"><span class="pre">conf.py</span></code> 文件中的 <code class="docutils literal"><span class="pre">html_theme</span></code> 变量的值为 <code class="docutils literal"><span class="pre">der</span></code> 。</li>
+<li>修改 sphinx 项目 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中的 <code class="docutils literal notranslate"><span class="pre">html_theme_path</span></code> 变量，让它指向 <code class="docutils literal notranslate"><span class="pre">der</span></code> 文件夹所在的位置。</li>
+<li>修改 sphinx 项目 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中的 <code class="docutils literal notranslate"><span class="pre">html_theme</span></code> 变量的值为 <code class="docutils literal notranslate"><span class="pre">der</span></code> 。</li>
 <li>完成！</li>
 </ol>
 </div>
 <div class="section" id="disqus">
 <h2>开启 disqus 支持<a class="headerlink" href="#disqus" title="永久链接至标题">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">编辑 <code class="docutils literal"><span class="pre">der</span></code> 文件夹中的 <code class="docutils literal"><span class="pre">layout.html</span></code> 文件，修改文件中和 disqus 有关的语句：</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="c1"># note: remove this comment if you want to enable disqus support</span>
+<li><p class="first">编辑 <code class="docutils literal notranslate"><span class="pre">der</span></code> 文件夹中的 <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> 文件，修改文件中和 disqus 有关的语句：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="c1"># note: remove this comment if you want to enable disqus support</span>
 
 <span class="p">{</span><span class="o">%</span> <span class="n">include</span> <span class="s2">&quot;disqus.html&quot;</span> <span class="o">%</span><span class="p">}</span>
 
@@ -128,15 +129,15 @@
 </pre></div>
 </div>
 <p>只保留这一句：</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">include</span> <span class="s2">&quot;disqus.html&quot;</span> <span class="o">%</span><span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">include</span> <span class="s2">&quot;disqus.html&quot;</span> <span class="o">%</span><span class="p">}</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">编辑 <code class="docutils literal"><span class="pre">der</span></code> 文件夹中的 <code class="docutils literal"><span class="pre">disqus.html</span></code> 文件，将其中的</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">disqus_shortname</span> <span class="o">=</span> <span class="s1">&#39;YOUR-DISQUS-FORUM-SHORTNAME&#39;</span><span class="p">;</span>
+<li><p class="first">编辑 <code class="docutils literal notranslate"><span class="pre">der</span></code> 文件夹中的 <code class="docutils literal notranslate"><span class="pre">disqus.html</span></code> 文件，将其中的</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">disqus_shortname</span> <span class="o">=</span> <span class="s1">&#39;YOUR-DISQUS-FORUM-SHORTNAME&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>中的 <code class="docutils literal"><span class="pre">YOUR-DISQUS-FORUM-SHORTNAME</span></code> 替换成你的 disqus 论坛的名字。</p>
+<p>中的 <code class="docutils literal notranslate"><span class="pre">YOUR-DISQUS-FORUM-SHORTNAME</span></code> 替换成你的 disqus 论坛的名字。</p>
 </li>
 <li><p class="first">完成！</p>
 </li>
@@ -201,7 +202,7 @@
 -->
     <div class="footer">
         &copy; Copyright 2018, 黄健宏.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.6.3.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.4.
     </div>
   </body>
 </html>
