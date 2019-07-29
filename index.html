@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Redis使用教程</title>
+    <title>Redis使用手册</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="top" title="Redis使用教程" href="#" /> 
+    <link rel="top" title="Redis使用手册" href="#" /> 
 
 <!--[if lte IE 6]>
 <link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
@@ -46,7 +46,7 @@
     <!--
     <img class="logo" src="_static/logo2.png" alt="logo"/>
     -->
-    <h1><a href="http://RedisGuide.com">Redis使用教程</a></h1>
+    <h1><a href="http://RedisGuide.com">Redis使用手册</a></h1>
     <!--
     <ul>
       <li>目录与试读</li>
@@ -63,7 +63,7 @@
 <div class="banner">
     <div class="banner_inner">
         <div class="book_cover">
-            <img class="cover" src="_static/cover.jpg" alt="cover"/>
+            <img class="cover" src="_static/cover.png" alt="cover"/>
         </div>
         <div class="intro_text">
             <h2>Redis 方面的集大成之作<br/>学习和使用 Redis 必不可少的一本书</h2>
@@ -87,7 +87,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="总目录"
              accesskey="I">索引</a></li>
-        <li><a href="#">Redis使用教程</a> &raquo;</li> 
+        <li><a href="#">Redis使用手册</a> &raquo;</li> 
       </ul>
     </div>
 -->  
@@ -98,166 +98,68 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>目录<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<ul class="simple">
-<li>前言</li>
-<li>新手上路</li>
-</ul>
-<p>第一部分：数据结构与应用</p>
-<ul class="simple">
-<li>字符串（String）</li>
-<li>散列（Hash）</li>
-<li>列表（List）</li>
-<li>集合（Set）</li>
-<li>有序集合（Sorted Set）</li>
-<li>HyperLogLog</li>
-<li>位图（bitmap）</li>
-<li>地理坐标（GEO）</li>
-<li>流（Stream）<strong>[新增章节! Redis 5 新特性]</strong></li>
-</ul>
-<p>第二部分：附加功能</p>
-<ul class="simple">
-<li>数据库</li>
-<li>自动过期</li>
-<li>流水线与事务</li>
-<li>Lua 脚本</li>
-<li>持久化</li>
-<li>发布与订阅</li>
-<li>模块<strong>[新增章节! Redis 4 新特性]</strong></li>
-</ul>
-<p>第三部分：多机功能与服务器管理</p>
-<ul class="simple">
-<li>复制</li>
-<li>Sentinel</li>
-<li>集群</li>
-<li>服务器管理</li>
-<li>配置选项</li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h1>写作进度<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
-<p>为了让关心本书的朋友能够第一时间了解到书本的写作进度，
-以下表格展示了书本各章节目前的完成情况。</p>
-<p>每章的写作阶段分别为：0)未开始；1)草拟大纲；2)进行中；3)初稿完成；4)修正；5)完稿。</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="16%" />
-<col width="51%" />
-<col width="33%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">章号</th>
-<th class="head">标题</th>
-<th class="head">进度</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>0</td>
-<td>前言</td>
-<td>未开始</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>新手上路</td>
-<td>未开始</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td>字符串</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>3</td>
-<td>散列</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>4</td>
-<td>列表</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>5</td>
-<td>集合</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>6</td>
-<td>有序集合</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>7</td>
-<td>HyperLogLog</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>8</td>
-<td>位图</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>9</td>
-<td>地理坐标</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>10</td>
-<td>流</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>11</td>
-<td>数据库</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>12</td>
-<td>自动过期</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>13</td>
-<td>流水线与事务</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>14</td>
-<td>Lua 脚本</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>15</td>
-<td>持久化</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>16</td>
-<td>发布与订阅</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>17</td>
-<td>模块</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>18</td>
-<td>复制</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>19</td>
-<td>Sentinel</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-even"><td>20</td>
-<td>集群</td>
-<td>初稿完成</td>
-</tr>
-<tr class="row-odd"><td>21</td>
-<td>服务器管理</td>
-<td>草拟大纲</td>
-</tr>
-<tr class="row-even"><td>22</td>
-<td>配置选项</td>
-<td>未开始</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="id3">
-<h1>发售信息<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
-<p>本书预计将于 2019 年发售。</p>
-<p>在本书发售之前，
+<h1>发售信息<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本书初稿已经完成，
+目前书稿正在审校当中，
+<strong>预计将于 2019 年 9 月末正式发售</strong>。</p>
+<p>在本书正式发售之前，
 本网站将会陆续公开更多相关信息，
 对此感兴趣的朋友请定期浏览本网站，
 又或者关注作者的<a class="reference external" href="http://weibo.com/huangz1990">微博</a>或<a class="reference external" href="https://twitter.com/huangz1990">twitter</a>。</p>
-<p><em>注意：
-因为本书目前尚未定稿，
-所以正式出版的书本和当前展示的内容可能会有一定区别，
-具体内容以正式出版的书本为准。</em></p>
+</div>
+<div class="section" id="id3">
+<h1>目录<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><p>前言</p></li>
+<li><p>引言</p></li>
+</ul>
+<p>第一部分：数据结构与应用</p>
+<ul class="simple">
+<li><p>字符串（String）</p></li>
+<li><p>散列（Hash）</p></li>
+<li><p>列表（List）</p></li>
+<li><p>集合（Set）</p></li>
+<li><p>有序集合（Sorted Set）</p></li>
+<li><p>HyperLogLog</p></li>
+<li><p>位图（bitmap）</p></li>
+<li><p>地理坐标（GEO）</p></li>
+<li><p>流（Stream）</p></li>
+</ul>
+<p>第二部分：附加功能</p>
+<ul class="simple">
+<li><p>数据库</p></li>
+<li><p>自动过期</p></li>
+<li><p>流水线与事务</p></li>
+<li><p>Lua 脚本</p></li>
+<li><p>持久化</p></li>
+<li><p>发布与订阅</p></li>
+<li><p>模块</p></li>
+</ul>
+<p>第三部分：多机功能</p>
+<ul class="simple">
+<li><p>复制</p></li>
+<li><p>Sentinel</p></li>
+<li><p>集群</p></li>
+</ul>
+<p>附录</p>
+<ul class="simple">
+<li><p>附录A：Redis 安装方法</p></li>
+<li><p>附录B：redis-py 安装方法</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h1>作者简介<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h1>
+<a class="reference internal image-reference" href="_images/huangz.png"><img alt="_images/huangz.png" class="align-right" src="_images/huangz.png" style="width: 145.25px; height: 200.54999999999998px;" /></a>
+<p>本书作者黄健宏自 2011 年接触 Redis 起就一直在持续地学习和研究 Redis ，
+并通过写书、翻译、讲授课程等方式与大家分享他了解到的 Redis 知识。</p>
+<p>黄健宏分别是<a class="reference external" href="http://redisbook.com">《Redis 设计与实现》</a>和<a class="reference external" href="http://redisinaction.com">《Redis 实战》</a>这两本畅销 Redis 图书的作者和译者。
+与此同时他还长期翻译并维护着在线的中文 Redis 文档<a class="reference external" href="http://www.redisdoc.com">《Redis 命令参考》</a>，
+这个文档每天都为数量众多的 Redis 使用者提供服务。</p>
+<p>作为早期接触 Redis 并且一直深入研究 Redis 的技术人员，
+黄健宏对 Redis 的应用和源码有深入的了解，
+他希望通过这本《Redis使用手册》向读者传授最常用和最核心的 Redis 知识，
+帮助读者了解 Redis 和用好 Redis 。</p>
+<p>关于黄健宏的更多信息以及他的联系方式可以在他的个人网站<a class="reference external" href="http://huangz.me">huangz.me</a>上面找到。</p>
 </div>
 
 
@@ -296,13 +198,13 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="总目录"
              >索引</a></li>
-        <li><a href="#">Redis使用教程</a> &raquo;</li> 
+        <li><a href="#">Redis使用手册</a> &raquo;</li> 
       </ul>
     </div>
 -->
     <div class="footer">
-        &copy; Copyright 2018, 黄健宏.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.4.
+        &copy; Copyright 2019, 黄健宏.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.0.1.
     </div>
   </body>
 </html>
