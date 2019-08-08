@@ -405,7 +405,7 @@ GETSET：获取旧值并设置新值
 
     >>> from redis import Redis
     >>> from cache import Cache
-    >>> client = Redis(decode_responses=True) # 使用二进制编码方式打开客户端
+    >>> client = Redis()                      # 使用二进制编码方式打开客户端
     >>> cache = Cache(client)
     >>> image = open("redis-logo.jpg", "rb")  # 以二进制只读方式打开图片文件
     >>> data = image.read()                   # 读取文件内容
