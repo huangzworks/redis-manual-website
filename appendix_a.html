@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Redis使用手册</title>
+    
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="top" title="Redis使用手册" href="index.html" />
+    <link rel="next" title="附录 B ：redis-py 安装方法" href="appendix_b.html" />
+    <link rel="prev" title="复制" href="replication.html" /> 
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+
+  </head>
+  <body>
+      <!--
+      <a href="index.html">
+        <img class="logo" src="_static/" alt="Logo"/>
+      </a>
+      -->
+<div class="header">
+  <div class="header_inner">
+    <!--
+    <img class="logo" src="_static/logo2.png" alt="logo"/>
+    -->
+    <h1><a href="http://RedisGuide.com">Redis使用手册</a></h1>
+    <!--
+    <ul>
+      <li>目录与试读</li>
+      <li>示例代码</li>
+      <li>作者简介</li>
+      <li>相关资源</li>
+      <li>讨论</li>
+    </ul>
+    -->
+  </div>
+</div>
+
+
+<div class="banner">
+    <div class="banner_inner">
+        <div class="book_cover">
+            <img class="cover" src="_static/cover.png" alt="cover"/>
+        </div>
+        <div class="intro_text">
+            <h2>Redis 方面的集大成之作<br/>学习和使用 Redis 必不可少的一本书</h2>
+            <ul>
+                <li>对一百八十多个 Redis 命令进行了详细且深入的介绍，并提供了相应的执行示例和参考信息，无论是学习新命令还是回顾已知命令的用法，都会非常方便。
+                <li>展示了锁、缓存、计数信号量、队列、分页、好友关系、自动补全、摇一摇、网址缩短器、唯一计数器、排行榜、登录会话等数十个实际可用的 Redis 应用程序的实现方法，帮助读者学习如何将 Redis 应用到实际开发中。（书中展示的所有应用程序代码都会以开源的方式公开。）
+                
+                <li>内容涵盖最新的 Redis 5，帮助读者将 HyperLogLog、位图（bitmap）、地理位置（GEO）、Redis 集群（cluster）、流（Stream）、模块（Module）等新特性知识全部收入囊中。
+                <li>全书所有章节均经过精心设计和编排，既可以在学习 Redis 时用作教程，又可以在使用 Redis 的过程中用作参考书。
+                <li>通过丰富的图示和详细的例子来展示 Redis 的关键技术，让知识不再枯燥难懂。
+                <li>《Redis设计与实现》作者、《Redis实战》译者、《Redis命令参考》译者黄健宏（huangz）最新力作，学习 Redis 的权威之选。
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="appendix_b.html" title="附录 B ：redis-py 安装方法"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="replication.html" title="复制"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="index.html">Redis使用手册</a> &raquo;</li> 
+      </ul>
+    </div>
+-->  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="a-redis">
+<h1>附录 A ：Redis 安装方法<a class="headerlink" href="#a-redis" title="永久链接至标题">¶</a></h1>
+<p>本附录将介绍在不同操作系统上安装 Redis 服务器及其内置客户端的具体方法。</p>
+<p>为了保证获得最新版本的 Redis 服务器，我们将通过编译方式安装 Redis 。</p>
+<div class="section" id="id1">
+<h2>免安装试运行<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>试用 Redis 最简单的方法就是访问 Try Redis 网站： <a class="reference external" href="https://try.redis.io/">https://try.redis.io/</a> 。</p>
+<p>Try Redis 可以在线执行大部分 Redis 数据操作命令，并提供了一个简单的 Redis 教程可供阅读。</p>
+<p>当你想要快速测试某个 Redis 数据操作命令，但是身边又没有安装了 Redis 的机器可供使用的话，那么不妨尝试一下 Try Redis 。</p>
+<img alt="_images/try_redis.png" src="_images/try_redis.png" />
+</div>
+<div class="section" id="macos">
+<h2>在 macOS 上安装<a class="headerlink" href="#macos" title="永久链接至标题">¶</a></h2>
+<p>为了在 macOS 上编译并安装 Redis ，
+我们需要先安装 make 、GCC 和 Git 等一系列开发工具，
+这一点可以通过执行以下命令完成：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ xcode-select --install
+</pre></div>
+</div>
+<p>在安装完开发工具之后，
+我们需要通过执行以下命令，
+获取最新版本的 Redis 项目源码：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/antirez/redis.git
+</pre></div>
+</div>
+<p>在克隆完项目之后，
+我们需要进入项目目录并编译源码：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd redis
+$ make
+</pre></div>
+</div>
+<p>为了保证编译完成的 Redis 程序运作正常，
+我们可以继续执行 Redis 附带的测试程序：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make test
+</pre></div>
+</div>
+<p>在测试顺利结束之后，
+我们就可以进入源码目录，
+并通过执行以下命令启动 Redis 服务器：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd src/
+$ ./redis-server
+</pre></div>
+</div>
+<p>又或者通过执行以下命令启动 Redis 客户端：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./redis-cli
+</pre></div>
+</div>
+</div>
+<div class="section" id="linux">
+<h2>在 Linux 上安装<a class="headerlink" href="#linux" title="永久链接至标题">¶</a></h2>
+<p>在 Ubuntu 等基于 Debian 的 Linux 系统上，
+我们可以通过执行以下命令安装编译 Redis 所需的工具：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install gcc make git
+</pre></div>
+</div>
+<p>接着克隆项目：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/antirez/redis.git
+</pre></div>
+</div>
+<p>然后编译并测试：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd redis
+$ make
+$ make test
+</pre></div>
+</div>
+<p>最后启动服务器：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd /src
+$ ./redis-server
+</pre></div>
+</div>
+<p>还有客户端：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./redis-cli
+</pre></div>
+</div>
+</div>
+<div class="section" id="windows">
+<h2>在 Windows 上安装<a class="headerlink" href="#windows" title="永久链接至标题">¶</a></h2>
+<p>因为 Redis 官方并不支持 Windows 系统，
+所以我们只能够通过虚拟机或者 Docker 等手段在 Windows 系统上安装 Redis 。</p>
+<p>在决定使用 Docker 的情况下，
+我们需要先按照以下文档的指示，
+在 Windows 系统中下载并安装 Docker ：
+<a class="reference external" href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a> 。</p>
+<p>在 Docker 安装完毕之后，
+我们就可以使用 Windows 自带的 CMD 命令行或是 PowerShell ，
+通过执行以下命令拉取最新的 Redis 镜像：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker pull redis:latest
+</pre></div>
+</div>
+<p>在此之后，
+我们可以通过执行以下命令启动 Redis 实例：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --name docker_redis -d redis
+f9442c418a0ae546ab76699e350bed68f56f53f68fe8c0562432e81e03e95809
+</pre></div>
+</div>
+<p>最后，
+再执行以下命令，
+我们就可以启动 <code class="docutils literal notranslate"><span class="pre">redis-cli</span></code> 客户端并向 Redis 实例发送命令请求了：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker exec -it f9442c418a0a redis-cli
+127.0.0.1:6379&gt; PING
+PONG
+</pre></div>
+</div>
+<p>关于 Redis Docker 镜像的更多信息请参考该镜像的文档：
+<a class="reference external" href="https://hub.docker.com/_/redis/">https://hub.docker.com/_/redis/</a> 。</p>
+</div>
+</div>
+
+
+
+            <!-- <div class="section" id="discuss">
+    <h2>
+        讨论
+        <a class="headerlink" href="#discuss" title="永久链接至标题">¶</a>
+    </h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'redisbookv1'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+<!--
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="appendix_b.html" title="附录 B ：redis-py 安装方法"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="replication.html" title="复制"
+             >上一页</a> |</li>
+        <li><a href="index.html">Redis使用手册</a> &raquo;</li> 
+      </ul>
+    </div>
+-->
+    <div class="footer">
+        &copy; Copyright 2019, 黄健宏.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>

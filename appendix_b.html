@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Redis使用手册</title>
+    
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="top" title="Redis使用手册" href="index.html" />
+    <link rel="prev" title="附录 A ：Redis 安装方法" href="appendix_a.html" /> 
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+
+  </head>
+  <body>
+      <!--
+      <a href="index.html">
+        <img class="logo" src="_static/" alt="Logo"/>
+      </a>
+      -->
+<div class="header">
+  <div class="header_inner">
+    <!--
+    <img class="logo" src="_static/logo2.png" alt="logo"/>
+    -->
+    <h1><a href="http://RedisGuide.com">Redis使用手册</a></h1>
+    <!--
+    <ul>
+      <li>目录与试读</li>
+      <li>示例代码</li>
+      <li>作者简介</li>
+      <li>相关资源</li>
+      <li>讨论</li>
+    </ul>
+    -->
+  </div>
+</div>
+
+
+<div class="banner">
+    <div class="banner_inner">
+        <div class="book_cover">
+            <img class="cover" src="_static/cover.png" alt="cover"/>
+        </div>
+        <div class="intro_text">
+            <h2>Redis 方面的集大成之作<br/>学习和使用 Redis 必不可少的一本书</h2>
+            <ul>
+                <li>对一百八十多个 Redis 命令进行了详细且深入的介绍，并提供了相应的执行示例和参考信息，无论是学习新命令还是回顾已知命令的用法，都会非常方便。
+                <li>展示了锁、缓存、计数信号量、队列、分页、好友关系、自动补全、摇一摇、网址缩短器、唯一计数器、排行榜、登录会话等数十个实际可用的 Redis 应用程序的实现方法，帮助读者学习如何将 Redis 应用到实际开发中。（书中展示的所有应用程序代码都会以开源的方式公开。）
+                
+                <li>内容涵盖最新的 Redis 5，帮助读者将 HyperLogLog、位图（bitmap）、地理位置（GEO）、Redis 集群（cluster）、流（Stream）、模块（Module）等新特性知识全部收入囊中。
+                <li>全书所有章节均经过精心设计和编排，既可以在学习 Redis 时用作教程，又可以在使用 Redis 的过程中用作参考书。
+                <li>通过丰富的图示和详细的例子来展示 Redis 的关键技术，让知识不再枯燥难懂。
+                <li>《Redis设计与实现》作者、《Redis实战》译者、《Redis命令参考》译者黄健宏（huangz）最新力作，学习 Redis 的权威之选。
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="appendix_a.html" title="附录 A ：Redis 安装方法"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="index.html">Redis使用手册</a> &raquo;</li> 
+      </ul>
+    </div>
+-->  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="b-redis-py">
+<h1>附录 B ：redis-py 安装方法<a class="headerlink" href="#b-redis-py" title="永久链接至标题">¶</a></h1>
+<p>本书的绝大部分代码示例都使用 Python 语言编写，
+并且使用了 redis-py 客户端来连接服务器并发送命令请求。</p>
+<p>如果你正在使用的电脑尚未安装 Python ，
+那么请访问 Python 的官方网站并按照文档中介绍的方法下载并安装相应的编程环境：
+<a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> 。</p>
+<p>因为本书的程序都是使用 Python 3 编写的，
+所以在下载 Python 安装程序的时候，
+请确保你下载的是 Python 3 而不是 Python 2 的安装程序。</p>
+<p>在安装 Python 之后，
+你应该可以通过输入以下命令来运行该语言的解释器：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3
+Python 3.7.3 (default, Mar 27 2019, 09:23:15)
+[Clang 10.0.1 (clang-1001.0.46.3)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<p>在安装完 Python 语言环境之后，
+我们就可以通过执行以下命令，
+使用其附带的 pip 程序来安装 redis-py 客户端了：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install redis
+</pre></div>
+</div>
+<p>在成功安装 redis-py 之后，
+我们就能够在 Python 解释器里面载入这个库了：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">redis</span> <span class="k">import</span> <span class="n">Redis</span>             <span class="c1"># 载入库</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">client</span> <span class="o">=</span> <span class="n">Redis</span><span class="p">()</span>                    <span class="c1"># 创建客户端实例</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">client</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;msg&quot;</span><span class="p">,</span> <span class="s2">&quot;hello world&quot;</span><span class="p">)</span>    <span class="c1"># 执行 SET 命令</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;msg&quot;</span><span class="p">)</span>                   <span class="c1"># 执行 GET 命令</span>
+<span class="go">b&#39;hello world&#39;                          # 未解码的值</span>
+</pre></div>
+</div>
+<p>注意，
+正如这里展示的 <code class="docutils literal notranslate"><span class="pre">GET</span></code> 命令执行结果所示，
+redis-py 默认将返回编码后的值作为结果。
+如果我们想让 redis-py 在操作字符串数据的时候自动对其实施解码，
+那么只需要在创建客户端实例的时候将 <code class="docutils literal notranslate"><span class="pre">decode_responses</span></code> 可选项的值设置为 <code class="docutils literal notranslate"><span class="pre">True</span></code> 即可，
+就像这样：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">client</span> <span class="o">=</span> <span class="n">Redis</span><span class="p">(</span><span class="n">decode_responses</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;msg&quot;</span><span class="p">)</span>
+<span class="go">&#39;hello world&#39;           # 字符串已解码</span>
+</pre></div>
+</div>
+<p>最后，
+如果你有兴趣的话，
+还可以通过执行以下命令查看 redis-py 目前支持的 Redis 命令：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
+<span class="gp">... </span>  <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">RESPONSE_CALLBACKS</span>
+<span class="go">__class__</span>
+<span class="go"># ...</span>
+<span class="go">_zaggregate</span>
+<span class="go">append</span>
+<span class="go">bgrewriteaof</span>
+<span class="go">bgsave</span>
+<span class="go">bitcount</span>
+<span class="go">bitfield</span>
+<span class="go">bitop</span>
+<span class="go">bitpos</span>
+<span class="go"># ...</span>
+<span class="go">zscan</span>
+<span class="go">zscan_iter</span>
+<span class="go">zscore</span>
+<span class="go">zunionstore</span>
+</pre></div>
+</div>
+</div>
+
+
+
+            <!-- <div class="section" id="discuss">
+    <h2>
+        讨论
+        <a class="headerlink" href="#discuss" title="永久链接至标题">¶</a>
+    </h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'redisbookv1'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+<!--
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="appendix_a.html" title="附录 A ：Redis 安装方法"
+             >上一页</a> |</li>
+        <li><a href="index.html">Redis使用手册</a> &raquo;</li> 
+      </ul>
+    </div>
+-->
+    <div class="footer">
+        &copy; Copyright 2019, 黄健宏.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>
