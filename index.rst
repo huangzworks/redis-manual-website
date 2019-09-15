@@ -18,7 +18,8 @@
 目录&试读
 ------------
 
-*以下目录中可点击的部分为试读内容*
+*以下目录中可点击的部分为试读内容*\，
+你也可以\ `访问并下载 PDF 格式的试读文档 <http://redisguide.com/RedisGuide_preview.pdf>`_ 。
 
 .. toctree::
    :maxdepth: 1
