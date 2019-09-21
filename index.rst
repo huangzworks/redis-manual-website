@@ -6,12 +6,15 @@
 发售信息
 ----------
 
-本书的排版工作已经完成，
-即将开始印刷，
-**预计将于 2019 年 9 月下旬正式发售**\ 。
+本书已在以下网店开始预售：
 
-在本书正式发售之前，
-本网站将会陆续公开更多相关信息，
+- `互动出版网（china-pub） <http://product.china-pub.com/8063671>`_
+
+- `京东 <https://search.jd.com/Search?keyword=Redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&enc=utf-8&suggest=1.his.0.0&wq=&pvid=4cf4065cbede4aeb9b55b2ab8802fabf>`_
+
+- `淘宝 <https://s.taobao.com/search?q=redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306>`_
+
+本书作者会根据书本的发售情况陆续公布最新的网店销售信息，
 对此感兴趣的朋友请定期浏览本网站，
 又或者关注作者的\ `微博 <http://weibo.com/huangz1990>`_\ 或\ `twitter <https://twitter.com/huangz1990>`_\ 。
 
