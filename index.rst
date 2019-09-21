@@ -244,6 +244,15 @@
    appendix_b
 
 
+代码示例
+------------
+
+《Redis使用手册》在书中包含了大量 Redis 应用程序示例，你可以通过访问以下页面来获取这些示例的源码：
+`github.com/huangz1990/RedisGuide-code <https://github.com/huangz1990/RedisGuide-code>`_ 。
+
+.. image:: image/github.png
+
+
 作者简介
 ------------
 
