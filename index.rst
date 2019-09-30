@@ -18,6 +18,8 @@
 
 - 亚马逊（\ `Kindle电子书 <https://www.amazon.cn/dp/B07YBRPVB8>`_\ ）
 
+- `豆瓣阅读电子书 <https://read.douban.com/ebook/124156809/>`_
+
 除了上述网店发售的公版图书之外，
 你还可以选择购买\ `限量的作者签名版 <http://redisguide.com/signed.html>`_\ 。
 
