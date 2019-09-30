@@ -8,7 +8,7 @@
 
 本书已在以下网店开始预售：
 
-- 京东（\ `自营 <https://item.jd.com/12716266.html>`_\ 、\ `非自营 <https://search.jd.com/Search?keyword=Redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&enc=utf-8&suggest=1.his.0.0&wq=&pvid=00c90db7dc5a473999b2da9407019fb5>`_\ ）
+- 京东（\ `自营 <https://item.jd.com/12716266.html>`_\ 、\ `非自营 <https://search.jd.com/Search?keyword=Redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&enc=utf-8&suggest=1.his.0.0&wq=&pvid=00c90db7dc5a473999b2da9407019fb5>`_\ 、\ `电子版 <https://e.jd.com/30530879.html>`_\ ）
 
 - `淘宝 <https://s.taobao.com/search?q=redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306>`_
 
