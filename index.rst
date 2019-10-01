@@ -266,7 +266,7 @@
 ------------
 
 查看《Redis使用手册》已知错误或报告你发现的错误，
-请访问：\ `github.com/huangz1990/RedisGuide-errata <https://github.com/huangz1990/RedisGuide-errata>`_
+请访问\ `此页面 <https://github.com/huangz1990/RedisGuide-errata>`_\ 。
 
 
 作者简介
