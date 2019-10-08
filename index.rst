@@ -14,7 +14,7 @@
 
 - `互动出版网 <http://product.china-pub.com/8063671>`_
 
-- `当当 <http://product.dangdang.com/27943233.html>`_
+- 当当（\ `纸书 <http://product.dangdang.com/27943233.html>`_\ 、\ `电子书 <http://e.dangdang.com/products/1901153748.html>`_\ ）
 
 - 亚马逊（\ `Kindle电子书 <https://www.amazon.cn/dp/B07YBRPVB8>`_\ ）
 
