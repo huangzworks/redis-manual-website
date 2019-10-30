@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-发售信息
+购买
 ----------
 
-本书已在以下网店开始预售：
+本书在以下网店或应用有售：
 
 - 京东（\ `自营 <https://item.jd.com/12716266.html>`_\ 、\ `非自营 <https://search.jd.com/Search?keyword=Redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&enc=utf-8&suggest=1.his.0.0&wq=&pvid=00c90db7dc5a473999b2da9407019fb5>`_\ 、\ `电子版 <https://e.jd.com/30530879.html>`_\ ）
 
@@ -18,14 +18,17 @@
 
 - 亚马逊（\ `Kindle电子书 <https://www.amazon.cn/dp/B07YBRPVB8>`_\ ）
 
-- `豆瓣阅读电子书 <https://read.douban.com/ebook/124156809/>`_
+- `豆瓣读书 <https://book.douban.com/subject/34836750/>`_\ 、\ `豆瓣阅读电子书 <https://read.douban.com/ebook/124156809/>`_
 
-除了上述网店发售的公版图书之外，
-你还可以选择购买\ `限量的作者签名版 <http://redisguide.com/signed.html>`_\ 。
+- `微信读书 <https://weibo.com/3219474004/IdRGK79yg>`_
 
-本书作者会根据书本的发售情况陆续公布最新的网店销售信息，
-对此感兴趣的朋友请定期浏览本网站，
-又或者关注作者的\ `微博 <http://weibo.com/huangz1990>`_\ 或\ `twitter <https://twitter.com/huangz1990>`_\ 。
+..
+    除了上述网店发售的公版图书之外，
+    你还可以选择购买\ `限量的作者签名版 <http://redisguide.com/signed.html>`_\ 。
+
+    本书作者会根据书本的发售情况陆续公布最新的网店销售信息，
+    对此感兴趣的朋友请定期浏览本网站，
+    又或者关注作者的\ `微博 <http://weibo.com/huangz1990>`_\ 或\ `twitter <https://twitter.com/huangz1990>`_\ 。
 
 目录&试读
 ------------
