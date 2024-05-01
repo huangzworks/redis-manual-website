@@ -3,6 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+Redis使用手册
+==================
+
+.. image:: image/banner.png
+   
+**Redis方面的集大成之作，学习和使用Redis必不可少的一本书**
+
+- 对一百八十多个 Redis 命令进行了详细且深入的介绍，并提供了相应的执行示例和参考信息，无论是学习新命令还是回顾已知命令的用法，都会非常方便。
+- 展示了锁、缓存、计数信号量、队列、分页、好友关系、自动补全、摇一摇、网址缩短器、唯一计数器、排行榜、登录会话等数十个实际可用的 Redis 应用程序的实现方法，帮助读者学习如何将 Redis 应用到实际开发中。（书中展示的所有应用程序代码都会以开源的方式公开。）
+- 内容涵盖最新的 Redis 5，帮助读者将 HyperLogLog、位图（bitmap）、地理位置（GEO）、Redis 集群（cluster）、流（Stream）、模块（Module）等新特性知识全部收入囊中。
+- 全书所有章节均经过精心设计和编排，既可以在学习 Redis 时用作教程，又可以在使用 Redis 的过程中用作参考书。
+- 通过丰富的图示和详细的例子来展示 Redis 的关键技术，让知识不再枯燥难懂。
+- 《Redis设计与实现》作者、《Redis实战》译者、《Redis命令参考》译者黄健宏（huangz）最新力作，学习 Redis 的权威之选。
+
 购买
 ----------
 
@@ -10,17 +24,17 @@
 
 - 京东（\ `自营 <https://item.jd.com/12716266.html>`_\ 、\ `非自营 <https://search.jd.com/Search?keyword=Redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&enc=utf-8&suggest=1.his.0.0&wq=&pvid=00c90db7dc5a473999b2da9407019fb5>`_\ 、\ `电子版 <https://e.jd.com/30530879.html>`_\ ）
 
-- `淘宝 <https://s.taobao.com/search?q=redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306>`_
-
-- `互动出版网 <http://product.china-pub.com/8063671>`_
-
 - 当当（\ `纸书 <http://product.dangdang.com/27943233.html>`_\ 、\ `电子书 <http://e.dangdang.com/products/1901153748.html>`_\ ）
-
-- 亚马逊（\ `Kindle电子书 <https://www.amazon.cn/dp/B07YBRPVB8>`_\ ）
 
 - `豆瓣读书 <https://book.douban.com/subject/34836750/>`_\ 、\ `豆瓣阅读电子书 <https://read.douban.com/ebook/124156809/>`_
 
 - `微信读书 <https://weibo.com/3219474004/IdRGK79yg>`_
+
+.. - 亚马逊（\ `Kindle电子书 <https://www.amazon.cn/dp/B07YBRPVB8>`_\ ）
+.. - `淘宝 <https://s.taobao.com/search?q=redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170306>`_
+
+.. - `互动出版网 <http://product.china-pub.com/8063671>`_
+
 
 ..
     除了上述网店发售的公版图书之外，
@@ -28,13 +42,13 @@
 
     本书作者会根据书本的发售情况陆续公布最新的网店销售信息，
     对此感兴趣的朋友请定期浏览本网站，
-    又或者关注作者的\ `微博 <http://weibo.com/huangz1990>`_\ 或\ `twitter <https://twitter.com/huangz1990>`_\ 。
+    又或者关注作者的\ `微博 <http://weibo.com/huangzworks>`_\ 或\ `twitter <https://twitter.com/huangzworks>`_\ 。
 
 目录&试读
 ------------
 
 *以下目录中可点击的部分为试读内容*\，
-你也可以\ `下载 PDF 格式的试读文档 <https://raw.githubusercontent.com/huangz1990/RedisGuide-website/master/RedisGuide_preview.pdf>`_ 。
+你也可以\ `下载 PDF 格式的试读文档 <https://raw.githubusercontent.com/huangzworks/RedisGuide-website/master/RedisGuide_preview.pdf>`_ 。
 
 .. toctree::
    :maxdepth: 1
@@ -262,7 +276,7 @@
 ------------
 
 《Redis使用手册》在书中包含了大量 Redis 应用程序示例，你可以通过访问以下页面来获取这些示例的源码：
-`github.com/huangz1990/RedisGuide-code <https://github.com/huangz1990/RedisGuide-code>`_ 。
+`github.com/huangzworks/RedisGuide-code <https://github.com/huangzworks/RedisGuide-code>`_ 。
 
 .. image:: image/github.png
 
@@ -271,7 +285,7 @@
 ------------
 
 查看《Redis使用手册》已知错误或报告你发现的错误，
-请访问\ `此页面 <https://github.com/huangz1990/RedisGuide-errata>`_\ 。
+请访问\ `此页面 <https://github.com/huangzworks/RedisGuide-errata>`_\ 。
 
 
 作者简介
@@ -284,8 +298,8 @@
 本书作者黄健宏自 2011 年接触 Redis 起就一直在持续地学习和研究 Redis ，
 并通过写书、翻译、讲授课程等方式与大家分享他了解到的 Redis 知识。
 
-黄健宏分别是\ `《Redis 设计与实现》 <http://redisbook.com>`_\ 和\ `《Redis 实战》 <http://redisinaction.com>`_\ 这两本畅销 Redis 图书的作者和译者。
-与此同时他还长期翻译并维护着在线的中文 Redis 文档\ `《Redis 命令参考》 <http://www.redisdoc.com>`_\ ，
+黄健宏分别是\ `《Redis 设计与实现》 <http://huangz.works/redisbook1e>`_\ 和\ `《Redis 实战》 <http://huangz.works/ria>`_\ 这两本畅销 Redis 图书的作者和译者。
+与此同时他还长期翻译并维护着在线的中文 Redis 文档《Redis 命令参考》，
 这个文档每天都为数量众多的 Redis 使用者提供服务。
 
 作为早期接触 Redis 并且一直深入研究 Redis 的技术人员，
@@ -293,5 +307,5 @@
 他希望通过这本《Redis使用手册》向读者传授最常用和最核心的 Redis 知识，
 帮助读者了解 Redis 和用好 Redis 。
 
-关于黄健宏的更多信息以及他的联系方式可以在他的个人网站\ `huangz.me <http://huangz.me>`_\ 上面找到。
+关于黄健宏的更多信息以及他的联系方式可以在他的个人网站\ `huangz.works <http://huangz.works>`_\ 上面找到。
 
