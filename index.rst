@@ -48,7 +48,7 @@ Redis使用手册
 ------------
 
 *以下目录中可点击的部分为试读内容*\，
-你也可以\ `下载 PDF 格式的试读文档 <https://raw.githubusercontent.com/huangzworks/RedisGuide-website/master/RedisGuide_preview.pdf>`_ 。
+你也可以\ `下载 PDF 格式的试读文档 <https://raw.githubusercontent.com/huangzworks/redis-manual-website/master/RedisGuide_preview.pdf>`_ 。
 
 .. toctree::
    :maxdepth: 1
@@ -276,7 +276,7 @@ Redis使用手册
 ------------
 
 《Redis使用手册》在书中包含了大量 Redis 应用程序示例，你可以通过访问以下页面来获取这些示例的源码：
-`github.com/huangzworks/RedisGuide-code <https://github.com/huangzworks/RedisGuide-code>`_ 。
+`github.com/huangzworks/redis-manual-code <https://github.com/huangzworks/redis-manual-code>`_ 。
 
 .. image:: image/github.png
 
@@ -285,7 +285,7 @@ Redis使用手册
 ------------
 
 查看《Redis使用手册》已知错误或报告你发现的错误，
-请访问\ `此页面 <https://github.com/huangzworks/RedisGuide-errata>`_\ 。
+请访问\ `此页面 <https://github.com/huangzworks/redis-manual-errata>`_\ 。
 
 
 作者简介
